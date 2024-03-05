@@ -1,0 +1,38 @@
+# git
+.git
+.gitignore
+
+# venv
+venv/
+env/
+ENV/
+.venv/
+pip-wheel-metadata/
+.venv/
+.vscode/
+
+# Exclude Python bytecode files
+*.pyc
+
+# Exclude Python cache directories
+__pycache__
+
+# Exclude environment files
+.env
+
+# Exclude editor-specific files
+.idea/
+.vscode/
+
+# Exclude Docker-related files
+Dockerfile
+.dockerignore
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# sqlite db
+*.db
