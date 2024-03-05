@@ -43,5 +43,5 @@ The commands example:
 
 ```bash
 docker build -t heroes-cards .
-docker run --name heroes-cards -p 8000:8000 --rm -d heroes-cards
+docker run --name heroes-cards -p 8000:8000 --rm -d --env-file .env heroes-cards
 ```
