@@ -42,6 +42,14 @@ flask run
 The commands example: 
 
 ```bash
+# build an image
 docker build -t heroes-cards .
-docker run --name heroes-cards -p 8000:8000 --rm -d --env-file .env heroes-cards
+
+# run the container
+docker run \
+--name heroes-cards \
+-p 8000:8000 \
+--env-file .env \
+-v db:/app/database \
+--rm -d heroes-cards
 ```
